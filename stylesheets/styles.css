@@ -1,0 +1,98 @@
+/*body colors and default colors and text*/
+body{
+        background-color: pink;
+        color: white;
+        font-family: 'EB Garamond', serif;
+        /*font-family: 'Licorice', cursive;
+        font-family: 'The Nautigal', cursive;*/
+        font-size: 25px;
+        
+      }
+/*header is for the title*/
+header {
+  padding: 10px 10px;
+  text-align: center;
+  background-color: white;
+  font-family: 'The Nautigal', cursive;
+  font-size: 100px;
+  color: black;
+  
+}
+/*quantity bar would be the shopping cart*/
+.quantity-bar {
+  display: grid;
+  grid: 150px / auto auto auto;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+/*layout of products*/
+#grid {
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  justify-content: center;
+
+}
+#grid p{
+  font-size: 20px;
+}
+#grid img {
+  border-radius: 50%;
+   width: 100%;
+  height: 100%;
+}
+#grid h3{
+  font-family: 'The Nautigal', cursive;
+  text-shadow: 2px 2px black;
+}
+.makeup-img img{
+  width: 100%;
+  height: 100%;
+  border-color: #82e0aa;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 10%;
+}
+/*card that shows off the products
+.card {
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
+  width: 15rem;
+  height: 25rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px #e04b52
+}*/
+.makeup-cards h2 {
+  color: black;
+  font-family: 'Licorice', cursive;
+
+}
+.makeup-cards p {
+  color: gray;
+  font-family: 'Licorice', cursive;
+}
