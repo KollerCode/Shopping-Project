@@ -1,9 +1,9 @@
 // Global Variables
 let makeupArray = [];
+let makeupCollection = document.getElementById("makeup-collection");
 
 // On StartUp
 document.addEventListener('DOMContentLoaded', () => {
-    let makeupCollection = document.getElementById("makeup-collection");
     fetch("http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline")
         .then((response) => response.json())
         .then(function (json) {
@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const reducer = (previousValue, currentValue) =>
                 previousValue + currentValue;
             const totalPrice = prices.reduce(reducer);
-        });
+            console.log(totalPrice.innerText)
+        })
 })
 
 function renderMakeup(makeup) {
@@ -71,3 +72,20 @@ function addTotal() {
     }
     return shoppingCartCopy.reduce();
     }
+makeupCollection.addEventListener("click", (e) => {
+  if (e.target.className === "addButton") {
+    let currentCart = parseFloat(e.target.previousElementSibling.innerText);
+    let totalPrice = currentCart + 
+    updateCartTotal()
+  }
+});
+
+function updateCartTotal() {
+    let cartPrice = document.getElementsByClassName('cart-price')
+    let price = parseFloat(cartPrice.innerText.replace("$"," "))
+    let cartItems = document.getElementsByClassName('cart-items')[0]
+    let cartQuantity = document.getElementsByClassName('cart-quantity')[0]
+    let quantity = quantityContainer.value
+    let total = 0
+    total = total + (price * quantity)
+}

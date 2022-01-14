@@ -20,13 +20,10 @@ header {
   color: black;
 }
 
-.maybelline {
-  height: 50%;
-  width: 50%;
-}
-.maybelline img {
-  height: 20%;
-  width: 20%;
+img.maybelline {
+  height: 30%;
+  width: 30%;
+  display: inline-flex;
 }
 
 #total-quantity-bar img{
