@@ -2,13 +2,14 @@
 body {
   margin: 0;      
   background-color: pink;
-        color: white;
-        font-family: 'EB Garamond', serif;
-        /*font-family: 'Licorice', cursive;
-        font-family: 'The Nautigal', cursive;*/
-        font-size: 25px;
+  color: white;
+  font-family: 'EB Garamond', serif;
+   /*font-family: 'Licorice', cursive;
+  font-family: 'The Nautigal', cursive;*/
+  font-size: 25px;
         
-      }
+}
+
 /*header is for the title*/
 header {
   padding: 10px 10px;
@@ -63,28 +64,7 @@ li a:hover {
   background-color: #111;
 }
 
-
 /*layout of products*/
-#grid {
-  display: grid;
-  grid-template-columns: repeat(5, 2fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  justify-content: center;
-
-}
-/* #grid p{
-  font-size: 20px;
-}
-#grid h1{
-  font-family: 'The Nautigal', cursive;
-}
-#grid img {
-}
-#grid h2{
-  font-family: 'The Nautigal', cursive;
-  text-shadow: 2px 2px black;
-} */
 .makeup-img img{
   width: 100%;
   height: 100%;
@@ -94,17 +74,6 @@ li a:hover {
   border-radius: 10%;
 }
 /*card that shows off the products*/
-#makeupCard h2 {
-  font-size: 30px;
-
-}
-#makeupCard h3{
-  font-size: 23px;
-}
-#makeup-cards p {
-  font-size: 10px;
-}
-
 #makeupCard {
   text-align: center;
   border: grey solid 1px;
@@ -112,12 +81,23 @@ li a:hover {
   border-width: 2px;
   padding: 1rem;
   width: 20rem;
-  height: 35rem;
   display: inline-grid;
+  align-content: stretch;
+  justify-content: center;
   margin: 2rem 2rem;
   box-shadow: 5px 5px 5px white;
 }
+#makeupCard h2 {
+  font-size: 30px;
 
+}
+#makeupCard h3{
+  font-size: 30px;
+  font-family: the Nautigal;
+}
+#makeup-cards p {
+  font-size: 10px;
+}
 #makeupCard img {
   border-radius: 50%;
   width: 90%;
@@ -127,26 +107,16 @@ li a:hover {
   border-width: 5px;
 }
 /*button*/
-.myButton {
-	box-shadow: 3px 4px 0px 0px #899599;
-	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
-	background-color:#ededed;
-	border-radius:15px;
-	border:1px solid #d6bcd6;
-	display:inline-block;
-	cursor:pointer;
-	color:#3a8a9e;
-	font-family:Arial;
-	font-size:17px;
-	padding:7px 25px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #e1e2ed;
+button {
+  position: relative;
+  background-color: rgb(248, 231, 241);
+  border-color: grey;
+  border-radius: 5px;
+  height: 3rem;
+  width: max-content;
+  color: black;
+  font-size: 18px;
+  justify-self: center;
+  font-family: eb garmond;
 }
-.myButton:hover {
-	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
-	background-color:#bab1ba;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
+

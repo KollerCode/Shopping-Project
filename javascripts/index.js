@@ -13,34 +13,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
   function renderMakeup(makeup) {
-    const grid = document.getElementById("grid");
     const makeupCard = document.createElement("div");
     makeupCard.id = "makeupCard";
     const makeupCards = document.getElementById("makeup-cards");
+      makeupCards.appendChild(makeupCard);
+    //   name element
     const makeupName = document.createElement("h2");
-    makeupName.innerText = makeup.name;
-    console.log(makeup.name);
+      makeupName.innerText = makeup.name;
+      makeupCard.appendChild(makeupName);
+    //   image elemnt
     const makeupImage = document.createElement("img");
     makeupImage.className = "makeup-img-avatar";
     makeupImage.src = makeup.image_link;
     console.log(makeup.image_link);
     makeupCard.appendChild(makeupImage);
-    makeupCard.appendChild(makeupName);
-    //    const description = document.createElement("p");
-    //    description.className = "description";
+    //   description element
+    // const description = document.createElement("p");
+    // description.className = "description";
     // description.innerText = makeup.description;
     // makeupCard.appendChild(description)
+    //   price element
     const price = document.createElement("h3");
     price.className = "price";
     price.innerText = makeup.price;
     makeupCard.appendChild(price);
-    makeupCards.appendChild(makeupCard);
+    // button element
+    const addToCartButton = document.createElement("button")
+    addToCartButton.className = "addButton"
+    addToCartButton.id = makeup.id;
+    addToCartButton.innerText = 'Add to Cart'
+    makeupCard.appendChild(addToCartButton)
   }
-//   const addToCartButton = document.getElementsByClassName("myButton");
-  // makeupCard.appendChild(addToCartButton)
-  //   const addToCart = document.createElement('button')
   //  const emptyCart = document.createElement('button')
-  //   addToCart.className = "add-btn"
 })
 // .map would make the empty array and then reduce to calculate
 // all the prices together
+addEventListener("click", AddTotal);
+function AddTotal(makeup) {
+    console.log(makeup)
+    let shoppingCartCopy = Object.assign({}, total)
+    let totalPrice = makeup.reduce
+    total.price = Math.ceil(total)
+    return shoppingCartCopy.reduce
+}
