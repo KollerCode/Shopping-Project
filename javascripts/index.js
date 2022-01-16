@@ -54,19 +54,23 @@ function renderMakeup(makeup) {
 
   //event listener for click clear cart
     // document.addEventListener("click", emptyCart);
-
+    // const priceArrayFinal = function () {
+    //     const priceArray = makeupArray.map(function (makeup) {
+    //     //    return parseFloat(makeup.price);
+    //      });
+    //      console.log(priceArray);
+    //      const reducer = (previousValue, currentValue) =>
+    //        previousValue + currentValue;
+    //     const totalPrice = priceArray.reduce(reducer);
+    //     console.log(totalPrice)
+    // }
     function addToCartClicked(event) {
         event.preventDefault
         alert("Item added to cart");
-         const priceArray = makeupArray.map(function (makeup) {
-           return parseFloat(makeup.price);
-         });
-         console.log(priceArray);
-         const reducer = (previousValue, currentValue) =>
-           previousValue + currentValue;
-         const totalPrice = price.reduce(reducer);
-        cartPriceArray()
         updateCartTotal()
+    //     if (event.target.className === "addButton") {
+    // let currentCart = parseFloat(e.target.previousElementSibling.innerText);
+    // let totalPrice = currentCart + updateCartTotal();
     }
     console.log(addToCartClicked)
     
@@ -77,7 +81,7 @@ function renderMakeup(makeup) {
       const total = 0
       total = total + price
     //   total = total + (price * quantity)
-      total = Math.round(total*100)/100
+      total = Math.round(total * 100) / 100
       document.getElementsByClassName("cart-total-price").innerText = '$' + total
   }
 //     function emptyCart(event) {
@@ -98,8 +102,6 @@ function renderMakeup(makeup) {
 //     for (let i = 1; i < cartItemNames.length; i++){ }
 // }
 
-
-
 // function addTotal() {
 //   console.log(makeupArray);
 //   let shoppingCartCopy = Object.assign({}, makeup);
@@ -108,9 +110,3 @@ function renderMakeup(makeup) {
 //   }
 //   return shoppingCartCopy.reduce();
 // }
-// makeupCollection.addEventListener("click", (e) => {
-//   if (e.target.className === "addButton") {
-//     let currentCart = parseFloat(e.target.previousElementSibling.innerText);
-//     let totalPrice = currentCart + updateCartTotal();
-//   }
-// });
