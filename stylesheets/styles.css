@@ -26,13 +26,13 @@ img.maybelline {
   display: inline-flex;
 }
 
-#total-quantity-bar img{
+#checkout-bar img{
   height: 5rem;
   width: 5rem;
   float: right;
 }
 /*quantity bar would be the shopping cart*/
-.quantity-bar {
+.checkout-bar {
   display: grid;
   grid: 150px / auto auto auto;
 }

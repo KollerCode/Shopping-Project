@@ -21,8 +21,19 @@
   <li><a href="#total">Total Price</a></li>
   <li><a href="#clear-cart">Clear Cart</a></li>
 </ul>
-<div id='total-quantity-bar'>
-      <img src="https://www.iconpacks.net/icons/2/free-shopping-cart-icon-3045-thumb.png" alt="Free Shopping Cart Icon">
+<div id='checkout-bar'>
+  <div class="cart-total">
+    <div class="cart-quantity"></div>
+    <div class="cart-price"></div>
+    <strong class="cart-total-name">Total</strong>
+    <strong class="cart-total-price">$0</strong>
+  </div> 
+  <img src="https://www.iconpacks.net/icons/2/free-shopping-cart-icon-3045-thumb.png" alt="Free Shopping Cart Icon">
+      <div class="empty-cart">
+        <button id="empty-cart">
+          <p>Empty Cart</p>
+        </button>
+      </div>
 </div>
 <!--create the container for the JSON server to reach and cart-->
 <h2>Pick Your Favorites</h2>
