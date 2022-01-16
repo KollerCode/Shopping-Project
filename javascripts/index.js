@@ -54,19 +54,31 @@ function renderMakeup(makeup) {
 
   //event listener for click clear cart
     // document.addEventListener("click", emptyCart);
-    // const priceArrayFinal = function () {
-    //     const priceArray = makeupArray.map(function (makeup) {
-    //     //    return parseFloat(makeup.price);
-    //      });
-    //      console.log(priceArray);
-    //      const reducer = (previousValue, currentValue) =>
-    //        previousValue + currentValue;
-    //     const totalPrice = priceArray.reduce(reducer);
-    //     console.log(totalPrice)
-    // }
+
+    const currentCart = function () {
+        // if (event.target.className === "addButton") {
+    // let currentCart = parseFloat(e.target.previousElementSibling.innerText);
+    // let totalPrice = currentCart + updateCartTotal();}
+       
+    }
+  
     function addToCartClicked(event) {
         event.preventDefault
         alert("Item added to cart");
+      const priceArray = makeupArray.map(function (makeup) {
+        return parseFloat(makeup.price);
+      });
+        console.log(price, event.target.id);
+         const reducer = (previousValue, currentValue) =>
+           previousValue + currentValue;
+         const totalPrice = priceArray.reduce(reducer);
+      console.log(totalPrice);
+      const shoppingCart = document.getElementsByClassName('shoppingCart')
+      makeupArray.forEach((price) => {
+        shoppingCart.innerHTML += `<Strong class="shoppingCart">Total${price}</strong>`
+      })
+      // let total = shoppingcart.CalculateTotal();
+      console.log(shoppingCart)
         updateCartTotal()
     //     if (event.target.className === "addButton") {
     // let currentCart = parseFloat(e.target.previousElementSibling.innerText);
@@ -78,11 +90,11 @@ function renderMakeup(makeup) {
     //   const cartPrice = document.getElementsByClassName('cart-price')
     //   const cartQuantity = document.getElementsByClassName('cart-quantity')[0]
     //   const quantity = cartQuantity.value
-      const total = 0
-      total = total + price
+    //   const total = 0
+    //   total = total + price
     //   total = total + (price * quantity)
-      total = Math.round(total * 100) / 100
-      document.getElementsByClassName("cart-total-price").innerText = '$' + total
+    //   total = Math.round(total * 100) / 100
+    //   document.getElementsByClassName("cart-total-price").innerText = '$' + total
   }
 //     function emptyCart(event) {
 //     document.getElementsByClassName("empty-cart")[0];

@@ -13,17 +13,18 @@ body {
 /*header is for the title*/
 header {
   padding: 10px 10px;
-  background-color: white;
-  text-align: center;
+  background-color: black;
+  /* text-align: center; */
   font-family: 'The Nautigal', cursive;
   font-size: 100px;
-  color: black;
+  color: white;
 }
 
-img.maybelline {
-  height: 30%;
-  width: 30%;
-  display: inline-flex;
+header img {
+  height: 63px;
+  width: 435px;
+  /* display: inline-block; */
+  /* float: left; */
 }
 
 #checkout-bar img{
