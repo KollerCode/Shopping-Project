@@ -1,7 +1,7 @@
 /*body colors and default colors and text*/
 body {
   margin: 0;      
-  background-color: pink;
+  background-color: rgb(248, 188, 198);
   color: white;
   font-family: 'EB Garamond', serif;
    /*font-family: 'Licorice', cursive;
@@ -12,12 +12,19 @@ body {
 
 /*header is for the title*/
 header {
-  padding: 10px 10px;
   background-color: black;
   /* text-align: center; */
   font-family: 'The Nautigal', cursive;
   font-size: 100px;
   color: white;
+  width: 100%;
+  margin: 0px;
+}
+
+header h4 {
+  margin: 0px;
+  padding-top: 100px;
+  text-align: center;
 }
 
 header img {
@@ -32,12 +39,29 @@ header img {
   width: 5rem;
   float: right;
 }
+
 /*quantity bar would be the shopping cart*/
-.checkout-bar {
+#checkout-bar {
   display: grid;
-  grid: 150px / auto auto auto;
+  /* grid: 80px / auto auto auto; */
+  grid: 80px / 150px 100px 100px;
+  justify-content: end;
+  align-items: center;
+  background-color: white;
 }
-ul {
+.cart-total-price{
+  float: inline-start;
+  font-size: 30px;
+  color: black;
+}
+
+.shoppingCart {
+  float: inline-start;
+  font-size: 30px;
+  color: black;
+}
+
+/* ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -60,6 +84,13 @@ li a {
 }
 li a:hover {
   background-color: #111;
+} */
+
+/* below the header */
+
+h1 {
+  text-align: center;
+  text-shadow: black;
 }
 
 /*layout of products*/
@@ -71,9 +102,11 @@ li a:hover {
   border-style: solid;
   border-radius: 10%;
 }
+
 /*card that shows off the products*/
 #makeupCard {
   text-align: center;
+  background-color: rgb(255, 199, 209);
   border: grey solid 1px;
   border-radius: 10%;
   border-width: 2px;
@@ -104,10 +137,11 @@ li a:hover {
   border-style: solid;
   border-width: 5px;
 }
+
 /*button*/
 button {
   position: relative;
-  background-color: rgb(248, 231, 241);
+  background-color: white
   border-color: grey;
   border-radius: 5px;
   height: 3rem;
@@ -118,3 +152,19 @@ button {
   font-family: eb garmond;
 }
 
+/* empty cart button */
+#empty-cart {
+  float: right;
+}
+button#empty-cart {
+  position: relative;
+  background-color: white;
+  border-color: grey;
+  border-radius: 50%;
+  height: 4rem;
+  width: max-content;
+  color: black;
+  font-size: 18px;
+  justify-self: center;
+  font-family: eb garmond;
+}
