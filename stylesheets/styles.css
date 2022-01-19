@@ -34,17 +34,10 @@ header img {
   /* float: left; */
 }
 
-#checkout-bar img{
-  height: 5rem;
-  width: 5rem;
-  float: right;
-}
-
 /*quantity bar would be the shopping cart*/
 #checkout-bar {
   display: grid;
-  /* grid: 80px / auto auto auto; */
-  grid: 80px / 150px 100px 100px;
+  grid: 80px / auto auto auto;
   justify-content: end;
   align-items: center;
   background-color: white;
@@ -57,37 +50,17 @@ header img {
   font-family: the Nautigal;
 }
 
+#checkout-bar img{
+  height: 5rem;
+  width: 5rem;
+  float: right;
+}
 .shoppingCart {
   float: inline-start;
   font-size: 40px;
   color: black;
   /* font-family: the Nautigal; */
 }
-
-/* ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-li {
-  float: right;
-}
-
-a {
-  display: block;
-  padding: 8px;
-  background-color: #dddddd;
-}
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-li a:hover {
-  background-color: #111;
-} */
 
 /* below the header */
 
