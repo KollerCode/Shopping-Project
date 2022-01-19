@@ -61,12 +61,8 @@ function renderMakeup(makeup) {
   emptyCartButton.addEventListener("click", emptyCart);
 
   //  possibly create a function to hold array with items in cart
-  const currentCart = function () {
-    // if (event.target.className === "addButton") {
-    // let currentCart = parseFloat(e.target.previousElementSibling.innerText);
-    // let totalPrice = currentCart + updateCartTotal();}
-       
-  }
+  // const currentCart = function () {
+  // }
   
   // When the user clicks the makeup they want to add to cart, 
   // an alert will pop up (no default refresh) and the total will add at the top
@@ -80,25 +76,20 @@ function renderMakeup(makeup) {
     console.log(event.target.id);
     
     // arr.push(parseFloat(event.target.id))
-   total = total + parseFloat(event.target.id)
-    // add all values
+    total = total + parseFloat(event.target.id)
+    updateCartTotal(total);
+    
+    // adds all values
     //  const reducer = (previousValue, currentValue) => previousValue += currentValue;
     //  const totalPrice = arr.reduce(reducer);
 
-    // console.log(totalPrice);
-    updateCartTotal(total)
-      
     // const shoppingCart = [];
     // shoppingCart.push(makeup.price);
     // makeupArray.forEach((makeup) => {
     //   return (makeup.price += shoppingCart);
     // });
-    // console.log(shoppingCart);
-    //     if (event.target.className === "addButton") {
-    // let currentCart = parseFloat(e.target.previousElementSibling.innerText);
-    // let totalPrice = currentCart + updateCartTotal();
+
   }
-  console.log(addToCartClicked)
     
   // function addTotal() {
   //   console.log(makeupArray);
@@ -110,23 +101,20 @@ function renderMakeup(makeup) {
   // }
   // This function will update the total each time an item is added
   function updateCartTotal(total) {
-    console.log(total);
     //   const total = 0
     //   total = total + shoppingCart
-    //   total = Math.round(total * 100) / 100
-    document.querySelector(".cart-total-price").innerText = `$ ${total}`
+    // total = Math.round(total * 100) / 100
+    let shoppingCart = new Intl.NumberFormat("us-EN", {
+      style: "currency",
+      currency: "USD",
+    }).format(total); 
+    document.querySelector(".cart-total-price").innerText = shoppingCart
     
   }
   // This function will empty the entire cart
-  function emptyCart(event) {
-  event.preventDefault
-    const buttonClicked = event.target;
-    if (buttonClicked) {
-      // alert("All items removed from cart");
-      // return total
-    }
-    else
-    updateCartTotal();
+  function emptyCart() {
+    total = 0
+    updateCartTotal(total);
   }
 }
 
