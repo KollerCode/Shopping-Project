@@ -51,14 +51,17 @@ header img {
 }
 .cart-total-price{
   float: inline-start;
-  font-size: 30px;
-  color: black;
+  font-size: 40px;
+  color: rgb(112, 236, 143);
+  padding: 13px;
+  font-family: the Nautigal;
 }
 
 .shoppingCart {
   float: inline-start;
-  font-size: 30px;
+  font-size: 40px;
   color: black;
+  /* font-family: the Nautigal; */
 }
 
 /* ul {

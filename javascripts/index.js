@@ -11,7 +11,9 @@ const fetchArray = () => {
         });
 }
 let makeupArray = []
-            
+let arr = []; 
+let total = 0
+
 // On StartUp
 document.addEventListener('DOMContentLoaded', () => {
     fetchArray() 
@@ -45,7 +47,7 @@ function renderMakeup(makeup) {
   // button element
   const addToCartButton = document.createElement("button");
   addToCartButton.className = "addButton";
-  addToCartButton.id = makeup.id;
+  addToCartButton.id = makeup.price
   addToCartButton.innerText = "Add to Cart";
   makeupCard.appendChild(addToCartButton);
   // erase button element
@@ -71,23 +73,27 @@ function renderMakeup(makeup) {
   function addToCartClicked(event) {
     event.preventDefault
     alert("Item added to cart");
-    const priceArray = makeupArray.map(function (makeup) {
-      return parseFloat(makeup.price);
-    });
-    console.log(parseFloat(makeup.price), event.target.id);
+    // const priceArray = makeupArray.map(function (makeup) {
+    //   return parseFloat(makeup.price);
+    // });
+    // console.log({ priceArray })
+    console.log(event.target.id);
+    
+    // arr.push(parseFloat(event.target.id))
+   total = total + parseFloat(event.target.id)
     // add all values
-    //  const reducer = (previousValue, currentValue) =>
-    //    previousValue + currentValue;
-    //  const totalPrice = priceArray.reduce(reducer);
+    //  const reducer = (previousValue, currentValue) => previousValue += currentValue;
+    //  const totalPrice = arr.reduce(reducer);
+
     // console.log(totalPrice);
+    updateCartTotal(total)
       
-    const shoppingCart = [];
-    shoppingCart.push(makeup.price);
-    makeupArray.forEach((makeup) => {
-      return (makeup.price += shoppingCart);
-    });
-    console.log(shoppingCart);
-    updateCartTotal()
+    // const shoppingCart = [];
+    // shoppingCart.push(makeup.price);
+    // makeupArray.forEach((makeup) => {
+    //   return (makeup.price += shoppingCart);
+    // });
+    // console.log(shoppingCart);
     //     if (event.target.className === "addButton") {
     // let currentCart = parseFloat(e.target.previousElementSibling.innerText);
     // let totalPrice = currentCart + updateCartTotal();
@@ -103,11 +109,13 @@ function renderMakeup(makeup) {
   //   console.log(shoppingCartCopy.reduce())
   // }
   // This function will update the total each time an item is added
-  function updateCartTotal() {
+  function updateCartTotal(total) {
+    console.log(total);
     //   const total = 0
     //   total = total + shoppingCart
     //   total = Math.round(total * 100) / 100
-    //   document.getElementsByClassName("cart-total-price").innerText = '$' + total
+    document.querySelector(".cart-total-price").innerText = `$ ${total}`
+    
   }
   // This function will empty the entire cart
   function emptyCart(event) {
