@@ -19,11 +19,15 @@ Using an open API that included an array of objects, I was able to create a mini
 - Beside the shopping cart is a "Empty Cart" button. This will do just that, empty the cart to $0. 
 
 ## ❔ HOW TO USE (aka Let's go Shopping!)
-![gifit_1642689919048](https://user-images.githubusercontent.com/90989922/150363128-f6db14aa-788d-425c-a254-1aa2745a7fca.gif)
+
 * In order to add the product total to the cart, one must first click the button "Add to cart" below the the makeup that is desired.
+![gif 1](https://user-images.githubusercontent.com/90989922/150364639-518eb581-2011-46bc-9e0a-be55aa7807b0.gif)
 * A pop-up alert will then notify you that that it has been added to your cart and **the price can then be seen in the total beside the cart below the header.**
 * As more products are added, the total continues to calculate. 
+![chrome-capture (2)](https://user-images.githubusercontent.com/90989922/150367307-c3ba2d60-2918-407c-b1ad-39b541920a65.gif)
+
 * You can also clear your whole cart by clicking "Empty cart"
+![gif 2](https://user-images.githubusercontent.com/90989922/150365464-158f6e26-59ad-4782-9e55-06dbd9f6080d.gif)
 
 ## 👩🏽‍💻 TECH STACK
 - Vanilla JavaScript
