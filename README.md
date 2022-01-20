@@ -12,24 +12,22 @@ Using an open API that included an array of objects, I was able to create a mini
 >This page has no refreshes and no page redirects. 
 
 ## 🌟 FEATURES
-*Displays Maybelline makeup products with name, price, and photo of the product upon the load of the DOM.
-*Each makeup product is nested into it's own "card" with an "Add to cart" button. 
-*The header contains the actual Mabelline logo.
-*Below the header there is a shopping cart with a "Total" beside it. This is where the price will accumulate. 
-*Beside the shopping cart is a "Empty Cart" button. This will do just that, empty the cart to $0. 
+- Displays Maybelline makeup products with name, price, and photo of the product upon the load of the DOM.
+- Each makeup product is nested into it's own "card" with an "Add to cart" button. 
+- The header contains the actual Mabelline logo.
+- Below the header there is a shopping cart with a "Total" beside it. This is where the price will accumulate. 
+- Beside the shopping cart is a "Empty Cart" button. This will do just that, empty the cart to $0. 
 
 ## ❔ HOW TO USE (aka Let's go Shopping!)
 ![]()
-*In order to add the product total to the cart, one must first click the button "Add to cart" below the the makeup that is desired.
-*A pop-up alert will then notify you that that it has been added to your cart and **the price can then be seen in the total beside the cart below the header.**
-*As more products are added, the total continues to calculate. 
-*You can also clear your whole cart by clicking "Empty cart"
+* In order to add the product total to the cart, one must first click the button "Add to cart" below the the makeup that is desired.
+* A pop-up alert will then notify you that that it has been added to your cart and **the price can then be seen in the total beside the cart below the header.**
+* As more products are added, the total continues to calculate. 
+* You can also clear your whole cart by clicking "Empty cart"
 
 ## 👩🏽‍💻 TECH STACK
--Vanilla JavaScript
-
--[Makeup api](http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline)
-
--JSON server
+- Vanilla JavaScript
+- [Makeup api](http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline)
+- JSON server
 
 >**Note**: This app is an SPA (Single Page Application) and a MVP (Minimal Viable Project)
