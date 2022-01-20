@@ -1,7 +1,7 @@
 # 💄Shop Mabelline
 > A simple but aesthic app that allows you to shop for different makeup products.
 ---
-**[OVERVIEW](https://github.com/KollerCode/Shopping-Project#overview) • 
+[OVERVIEW](https://github.com/KollerCode/Shopping-Project#overview) • 
 [FEATURES](https://github.com/KollerCode/Shopping-Project#features) • 
 [HOW TO USE](https://github.com/KollerCode/Shopping-Project#how-to-use-lets-go-shopping) • 
 [TECH STACK](https://github.com/KollerCode/Shopping-Project#tech-stack) • 
@@ -19,7 +19,7 @@ Using an open API that included an array of objects, I was able to create a mini
 - Beside the shopping cart is a "Empty Cart" button. This will do just that, empty the cart to $0. 
 
 ## ❔ HOW TO USE (aka Let's go Shopping!)
-![]()
+![photo](/home/nkoller/Downloads/gifit_1642689919048.gif)
 * In order to add the product total to the cart, one must first click the button "Add to cart" below the the makeup that is desired.
 * A pop-up alert will then notify you that that it has been added to your cart and **the price can then be seen in the total beside the cart below the header.**
 * As more products are added, the total continues to calculate. 
@@ -31,3 +31,6 @@ Using an open API that included an array of objects, I was able to create a mini
 - JSON server
 
 >**Note**: This app is an SPA (Single Page Application) and a MVP (Minimal Viable Project)
+
+Sources
+https://www.maybelline.com/
