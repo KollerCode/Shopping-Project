@@ -13,7 +13,6 @@ body {
 /*header is for the title*/
 header {
   background-color: black;
-  /* text-align: center; */
   font-family: 'The Nautigal', cursive;
   font-size: 100px;
   color: white;
@@ -30,8 +29,6 @@ header h4 {
 header img {
   height: 63px;
   width: 435px;
-  /* display: inline-block; */
-  /* float: left; */
 }
 
 /*quantity bar would be the shopping cart*/
@@ -59,7 +56,6 @@ header img {
   float: inline-start;
   font-size: 40px;
   color: black;
-  /* font-family: the Nautigal; */
 }
 
 /* below the header */
@@ -117,7 +113,7 @@ h1 {
 /*button*/
 button {
   position: relative;
-  background-color: white
+  background-color: white;
   border-color: grey;
   border-radius: 5px;
   height: 3rem;
