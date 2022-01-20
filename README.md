@@ -1,9 +1,11 @@
 # 💄Shop Mabelline
 > A simple but aesthic app that allows you to shop for different makeup products.
+---
 **[OVERVIEW](https://github.com/KollerCode/Shopping-Project#overview) • 
 [FEATURES](https://github.com/KollerCode/Shopping-Project#features) • 
 [HOW TO USE](https://github.com/KollerCode/Shopping-Project#how-to-use-lets-go-shopping) • 
 [TECH STACK](https://github.com/KollerCode/Shopping-Project#tech-stack) • 
+---
 ## 📖 OVERVIEW 
 Using an open API that included an array of objects, I was able to create a mini e-commerce page. The API I chose happened to be Maybelline makeup products. **This app allows you to go "shopping" and when a product is added to your cart, you will be alerted by a "pop-up". As you continue adding items to your cart, the total price will increase.** If you would like to clear your cart and start again, you can clear it with the click of a button! 
 
