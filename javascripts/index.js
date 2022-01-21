@@ -10,6 +10,7 @@ const fetchArray = () => {
             makeupArray.forEach((makeup) => (makeupCollection += renderMakeup(makeup)));
         });
 }
+
 let makeupArray = []
 let total = 0
 let shoppingCartArray = []
