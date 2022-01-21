@@ -71,7 +71,7 @@ function renderMakeup(makeup) {
   function addToCartClicked(event) {
     event.preventDefault;
     alert("Item added to cart");
-    total = total + parseFloat(event.target.id);
+    total += parseFloat(event.target.id);
     updateCartTotal(total);
   }
 
