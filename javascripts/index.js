@@ -69,7 +69,6 @@ function renderMakeup(makeup) {
   // When the user clicks the makeup they want to add to cart,
   // an alert will pop up (no default refresh) and the total will add at the top
   function addToCartClicked(event) {
-    event.preventDefault;
     alert("Item added to cart");
     total += parseFloat(event.target.id);
     updateCartTotal(total);
